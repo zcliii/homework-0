@@ -1,0 +1,70 @@
+---
+title: "HW0"
+format: html
+editor: visual
+---
+
+## HW0
+
+```{r}
+#| echo: false
+
+#Q1
+a <- 1
+b <- -1
+c <- -2
+
+#plot the equation
+x<- seq(-5,5,length=300)
+plot(x, a*x^2+b*x+c, type="l")
+abline(h=0, lty=2)
+
+#solve the equation
+x1 <- (-b + (b^2-4*a*c)^1/2)/2
+x2 <- (-b-(b^2+4*a*c)^1/2)/2
+x1
+x2
+```
+
+```{r}
+#| echo: false
+
+#Q2
+##giving new values to a, b, c
+a <- 1
+b <- 2
+c <- 5
+
+#plot the equation
+x <- seq (5, -5, length=300)
+plot(x, a*x^2+b*x+c, type = "l")
+##add a line y=0
+abline(h=0, lty=2)
+
+#solve the equation
+x1 <- (-b + (b^2-4*a*c)^1/2)/2
+x2 <- (-b - (b^2-4*a*c)^1/2)/2
+x1
+x2
+```
+
+```{r}
+#| echo: false
+
+#Q3
+##giving new values to a, b, c
+a <- 1
+b <- 3
+c <- 2
+
+##plot the equation
+x <- seq(-5,5, length=300)
+plot(x, a*x^2+b*x+c, type = "l")
+abline(h=0, lty=2)
+
+##solve the equation
+x1 <- (-b + (b^2-4*a*c)^1/2)/2
+x2 <- (-b - (b^2-4*a*c)^1/2)/2
+x1
+x2
+```
